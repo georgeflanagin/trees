@@ -2,7 +2,28 @@
 """
 A classic (not left-leaning) Red-Black Tree implementation, supporting 
 addition and deletion. The code is by Stanislav Kozlovski, modified
-slightly by George Flanagin of University of Richmond.
+slightly by George Flanagin of University of Richmond, with the purpose
+of having it look somewhat more like the rest of the code at the
+university. The changes are only additions.
+
+ 1. The color of the nodes is now an Enum.
+ 2. The Node class contains __slots__ to save space.
+ 3. For the purposes of teaching, I added a second iterator that
+    prints the nodes of the tree with their connectivity.
+ 4. There is a very tiny demo at the end of the file.
+ 5. Also for the purposes of teaching about trees, I put in a type
+    check to ensure all the Nodes in a tree are of the same
+    value type.
+ 6. I added two one-line @classmethods to build red and black
+    nodes. This makes it easier (for me) to see when the two
+    types of nodes are being built.
+ 7. I added typing compatible with Python 3.6.
+ 8. I added traceback and inspect to assist with debugging, 
+    again primarily as a teaching aid.
+ 9. I added a __len__ operator to the tree to retun the number
+    of Nodes, which conforms to standard practice.
+10. I added a small number of boolean functions as an aid to 
+    teaching.
 
 Other than those changes, I left the code /in situ/.
 """
