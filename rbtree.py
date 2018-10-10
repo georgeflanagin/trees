@@ -789,9 +789,9 @@ class RedBlackTree:
 
 if __name__ == '__main__':
     import random
-    import rb_tree
+    import rbtree
 
-    t = rb_tree.RedBlackTree()
+    t = rbtree.RedBlackTree()
     for i in range(0, 30):
         v = random.choice(range(-100, 100))
         print("adding {}".format(v))
